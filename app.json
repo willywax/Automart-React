@@ -1,0 +1,16 @@
+{
+    "addons": [
+    ],
+    "buildpacks": [
+  
+    ],
+    "env": {
+    },
+    "formation": {
+    },
+    "name": "automart-react",
+    "scripts": {
+    },
+    "stack": "heroku-18"
+  }
+  
