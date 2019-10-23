@@ -1,0 +1,45 @@
+
+.center-div {
+    margin: 0 auto;
+}
+
+.auth-div {
+    width: 90%;
+    text-align: center;
+    margin: 10px;
+}
+
+.input-field:focus {
+    border-bottom:  rgb(243, 74, 11); 
+}
+.width-80 {
+    width: 80%;
+}
+
+.check-box {
+    text-align: left;
+    width: 80%;
+}
+
+.login-btn{
+    margin: 30px;
+    border: none;
+    outline: none;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: rgb(243, 74, 11);
+    width: 70%;
+    font-weight: bold;
+    color: white;
+}
+
+.border-1 {
+    border: 1px solid black;
+}
+
+.orange-text{
+    color: rgb(243, 74, 11);
+    text-decoration: none;
+}

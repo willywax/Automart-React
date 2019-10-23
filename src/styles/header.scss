@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Lato|Merriweather:700|PT+Sans&display=swap');
+
+$color : (
+    primary : rgb(243, 74, 11)
+);
+
+@function color($color-name){
+    @return map-get($map: $color, $key: $color-name)
+}
+
+
+.header {
+    height: 80px;
+
+    img{
+        height: 100px;
+        width: 150px;
+    }
+}
+
+.nav{
+    text-align: center;
+    height: 100%;
+}
+
+.link-container{
+    border-right: 3px solid color(primary) ;
+}
+
+.link{
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15;
+    color: black;       
+}
+
+.link:hover {
+    border-bottom: 3px solid color(primary);
+}
