@@ -1,7 +1,9 @@
 import React from 'react';
-import { GridList, GridListTile, GridListTileBar } from "@material-ui/core";
+import { GridList, GridListTile } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import CarCard from './CarCard';
+
+import PaginatorItem from './Paginator';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -13,7 +15,7 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.background.paper,
     },
     gridList: {
-        maxHeight: 800,
+        maxHeight: 910,
         // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
         transform: 'translateZ(0)',
     },
@@ -31,15 +33,20 @@ const tileData = [<CarCard />, <CarCard />, <CarCard />, <CarCard />, <CarCard /
 
 function CarGrid() {
     const classes = useStyles();
-    return (
-        <GridList cellHeight={450} cols={3}  className={classes.gridList}>
-            {tileData.map(tile => (
-                <GridListTile key='counter' cols={1} rows={1}>
-                    {tile}
-                </GridListTile>
-            ))}
-        </GridList>
 
+    
+
+    return (
+        <>
+            <GridList cellHeight={450} cols={3} className={classes.gridList}>
+                {tileData.map(tile => (
+                    <GridListTile key='counter' cols={1} rows={1}>
+                        {tile}
+                    </GridListTile>
+                ))}
+            </GridList>
+            <PaginatorItem />
+        </>
     )
 }
 

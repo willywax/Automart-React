@@ -7,7 +7,7 @@ import LandingNav from './LandingNav';
 import { Grid } from '@material-ui/core';
 
 
-function Header() {
+function Header(props) {
     return (
         <Grid container alignContent='center' className='header'>
             <Grid item xs={8}>
@@ -16,7 +16,7 @@ function Header() {
                 </Link>
             </Grid>
             <Grid item xs={4}>
-                <LandingNav />
+                <LandingNav logged_In={props.logged_In}/>
             </Grid>
         </Grid>
     );

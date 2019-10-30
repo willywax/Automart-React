@@ -5,10 +5,16 @@ import { Grid } from "@material-ui/core";
 import CarGrid from '../../components/CarGrid';
 
 class MainLandingPage extends React.Component {
+    // eslint-disable-next-line no-useless-constructor
+    constructor(props){
+        super(props);
+        
+    }
+    
     render() {
         return (
             <>
-                <Header />
+                <Header logged_In={this.props.logged_In}/>
                 <Grid container spacing={3} className=''>
                     <Grid item xs={3}>
                         <Filter />
@@ -17,7 +23,7 @@ class MainLandingPage extends React.Component {
                     <Grid item xs={9} className=''>
                         <CarGrid />
                     </Grid>
-
+                    
                 </Grid>
             </>
         )

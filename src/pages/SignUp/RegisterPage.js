@@ -45,7 +45,6 @@ export default function RegisterPage() {
               <OrangeTextField
                 autoComplete="fname"
                 name="firstName"
-                multiline
                 required
                 fullWidth
                 id="firstName"
@@ -65,7 +64,6 @@ export default function RegisterPage() {
             </Grid>
             <Grid item xs={12}>
               <OrangeTextField
-                multiline
                 required
                 fullWidth
                 id="email"
