@@ -33,14 +33,15 @@ const tileData = [<CarCard />, <CarCard />, <CarCard />, <CarCard />, <CarCard /
 
 function CarGrid() {
     const classes = useStyles();
+    let counter = 0;
 
-    
+
 
     return (
         <>
             <GridList cellHeight={450} cols={3} className={classes.gridList}>
                 {tileData.map(tile => (
-                    <GridListTile key='counter' cols={1} rows={1}>
+                    <GridListTile key={counter+1} cols={1} rows={1}>
                         {tile}
                     </GridListTile>
                 ))}

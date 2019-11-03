@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import LogInPage from '../pages/SignIn/LogInPage';
 import RegisterPage from '../pages/SignUp/RegisterPage';
 import MainLandingPage from '../pages/Landing/MainLandingPage';
@@ -15,17 +15,7 @@ function Layout(props) {
 
 
     const handleLogin = event => {
-        event.preventDefault();
-        console.log(event);
-        setLoggedIn({ ...status, authenticated: 'true' });
-        alert('State is ' + status.authenticated);
-        
-        <Redirect
-            to={{
-                pathname: "/",
-                logged_In: status.authenticated 
-            }}
-        />
+
     }
     return (
         <Switch>

@@ -1,0 +1,3 @@
+export const LOGIN_SUCCESSFULL = "LOGIN_SUCCESSFUL";
+export const LOGIN_FAILED = "LOGIN_FAILED";
+export const BEGIN_API_CALL = "BEGIN_API_CALL";
